@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/news.css" />
+    <script src="./lib/jquery.js"></script>
+    <!-- 2.1引入模板引擎文件 -->
+    <script src="./lib/template-web.js"></script>
+</head>
+
+<body>
+
+    <div id="news-list">
+        <!-- <div class="news-item">
+            <img class="thumb" src="" alt="" />
+            <div class="right-box">
+                <h1 class="title">5G商用在即，三大运营商营收持续下降</h1>
+                <div class="tags">
+                    <span>三大运营商</span>
+                    <span>中国移动</span>
+                    <span>5G商用</span>
+                </div>
+                <div class="footer">
+                    <div>
+                        <span>胡润百富</span>&nbsp;&nbsp;
+                        <span>2019-10-28 10:14:38</span>
+                    </div>
+                    <span>评论数：66</span>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- 2.3定义模板 -->
+    <script type="text/html" id="tpl">
+        {{each data}}
+        <div class="news-item">
+            <img class="thumb" src="{{'http://www.liulongbin.top:3006'+$value.img}}" alt="" />
+            <div class="right-box">
+                <h1 class="title">{{$value.title}}</h1>
+                <div class="tags">
+                    <!-- $value.tags:得到字符串"三大运营商,中国移动,5G商用" -->
+                    <!-- 将字符串以逗号分割：$value.tags.split(','),分割之后返回一个数组 -->
+                    <!-- 将数组遍历得到每一项 -->
+                    {{each $value.tags.split(',')}}
+                    <span>{{$value}}</span> {{/each}}
+                </div>
+                <div class="footer">
+                    <div>
+                        <span>{{$value.source}}</span>&nbsp;&nbsp;
+                        <span>{{$value.time | dateFormat}}</span>
+                    </div>
+                    <span>评论数：{{$value.cmtcount}}</span>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <script>
+        //1、通过get请求获得数据
+        $.get('http://www.liulongbin.top:3006/api/news', function(res) {
+            if (res.status !== 200) {
+                return alert('获取新闻列表失败')
+            } else {
+                console.log(res);
+                // 3、定义过滤器函数
+                template.defaults.imports.dateFormat = function(date) {
+                        var dt = new Date(date);
+                        var y = dt.getFullYear();
+                        var m = dt.getMonth() + 1;
+                        var d = dt.getDate();
+                        return y + '-' + m + '-' + d;
+                    }
+                    // 2、将得到的数据渲染到页面当中去，采取模板引擎的渲染方式
+                    // 2.2定义数据：data(是一个数组，数组里面由对象所组成)
+                    // 2.3调用template函数
+                var contain = template('tpl', res);
+                $('#news-list').html(contain);
+            }
+        })
+    </script>
+
+</body>
+
+</html>
