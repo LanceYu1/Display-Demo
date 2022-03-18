@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./lib/jquery.js"></script>
+</head>
+
+<body>
+    <!-- 首先你得做一个表单吧 -->
+    <form action="" target="_self" method="post" id="fo">
+        <!-- 表单中几个属性要记牢 -->
+        <input type="text" name="txt">
+        <button type="submit">提交</button>
+    </form>
+
+    <!-- 
+    传统表单提交数据的缺点是：
+    1、一提交页面就会跳转
+    2、页面的数据会丢失 
+
+    解决问题的方法：
+    1、对于第一个问题，给表单添加一个阻止默认跳转
+    2、对于第二个问题，用serialize方法来获取表单数据，存储数据的表单一定要加name属性
+    -->
+
+    <script>
+        $('#fo').on('submit', function(e) {
+            e.preventDefault(); //解决了第一个问题
+            var txt = $(this).serialize();
+            console.log(txt);
+        })
+    </script>
+</body>
+
+</html>
