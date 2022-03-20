@@ -1,0 +1,219 @@
+.banner {
+    background-color: #f5f5f5;
+}
+
+.banner .wrapper {
+    display: flex;
+    height: 500px;
+}
+
+.banner .wrapper ul {
+    width: 251px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .8)
+}
+
+.banner .wrapper ul li {
+    height: 50px;
+    line-height: 50px;
+}
+
+.banner .wrapper ul a {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+    padding-right: 19px;
+    font-size: 14px;
+    color: #ffffff;
+    height: 50px;
+}
+
+.banner .wrapper ul a:hover {
+    background-color: #27ba9b;
+}
+
+.banner .wrapper ul a span {
+    font-size: 16px;
+}
+
+.banner .wrapper ul a i {
+    position: absolute;
+    top: 21px;
+    left: 214px;
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: -40px -110px;
+}
+
+.banner .wrapper .right {
+    width: 991px;
+    height: 500px;
+}
+
+.current_left {
+    background-color: #27ba9b;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: #f1ebe8;
+}
+
+.swiper-pagination-bullet {
+    background-color: #f1ebe8;
+}
+
+
+/* 新鲜好物 */
+
+.goods .hd {
+    height: 114px;
+    line-height: 114px;
+    color: #999999;
+}
+
+.goods .hd h2 {
+    margin-right: 34px;
+    font-size: 29px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.goods .hd a {
+    color: #999999;
+}
+
+.goods .hd a i {
+    margin-right: 20px;
+}
+
+.goods .bd {
+    background-color: #f0f9f4;
+}
+
+.goods .bd li {
+    float: left;
+    margin-right: 8px;
+    text-align: center;
+}
+
+.goods .bd li:last-child {
+    margin-right: 0;
+}
+
+.goods .bd img {
+    width: 304px;
+}
+
+.goods .bd li h3 {
+    margin: 22px 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.goods .bd li a p {
+    font-size: 23px;
+    color: #9a2e1f;
+}
+
+
+/* 生鲜 */
+
+.home {
+    background-color: #f5f5f5;
+}
+
+.freshgoods .hd {
+    display: flex;
+    justify-content: space-between;
+    padding: 34px 0;
+}
+
+.freshgoods .hd .left {
+    font-size: 29px;
+}
+
+.freshgoods .hd ul {
+    margin-right: 65px;
+}
+
+.freshgoods .hd li {
+    float: left;
+}
+
+.freshgoods .hd li a {
+    padding: 2px 7px;
+}
+
+.freshgoods .hd li a:hover {
+    background-color: #27ba9b;
+}
+
+.freshgoods .hd .check a {
+    color: #999999;
+}
+
+.freshgoods .body {
+    display: flex;
+}
+
+.freshgoods .body .right {
+    margin-left: 37px;
+}
+
+.freshgoods .body a {
+    display: inline-block;
+    width: 240px;
+    height: 300px;
+}
+
+.freshgoods .body ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.freshgoods .body ul img {
+    width: 97%;
+}
+
+.freshgoods .body ul i {
+    font-size: 22px;
+    color: #9a2e1f;
+}
+
+.current_goods {
+    background-color: #27ba9b;
+}

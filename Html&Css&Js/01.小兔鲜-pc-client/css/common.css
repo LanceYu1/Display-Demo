@@ -1,0 +1,258 @@
+/* 快捷菜单模块的样式 */
+
+.shortcut {
+    height: 52px;
+    background-color: #333333;
+    line-height: 52px;
+}
+
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.shortcut li {
+    color: #dcdcdc;
+}
+
+.shortcut a {
+    position: relative;
+    margin: 0 16px;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.shortcut li a span {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    margin-right: 8px;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+}
+
+.shortcut li a strong {
+    margin-left: 23px;
+    font-weight: normal;
+}
+
+.head {
+    height: 130px;
+    overflow: hidden;
+}
+
+
+/* 头部 */
+
+.head .logo {
+    float: left;
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 207px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+
+.head .nav {
+    float: left;
+    margin-left: 40px;
+    line-height: 130px;
+}
+
+.head .nav li {
+    float: left;
+    margin-right: 48px;
+}
+
+.head .nav a {
+    font-size: 16px;
+    color: #333333;
+}
+
+.head .nav a:hover {
+    padding-bottom: 7px;
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.head .search {
+    position: relative;
+    float: left;
+    margin-top: 54px;
+    margin-left: 34px;
+    width: 172px;
+    height: 30px;
+    background-color: red;
+}
+
+.head .search input {
+    padding-left: 29px;
+    width: 172px;
+    height: 30px;
+    color: #cccccc;
+    font-size: 14px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.head .search span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -79px -70px;
+}
+
+.current_nav {
+    padding-bottom: 7px;
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+
+/* 联系 */
+
+.communication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 304px;
+    background-color: #fff;
+}
+
+.communication dl {
+    width: 241px;
+    height: 156px;
+}
+
+.communication dl dt {
+    margin-left: 90px;
+}
+
+.communication dl dd {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.communication dl dd a {
+    display: inline-block;
+    margin-top: 35px;
+    width: 93px;
+    height: 92px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    color: #999;
+}
+
+.communication dl dd .server span,
+.communication dl dd .question span {
+    display: block;
+    margin-top: 16px;
+    margin-left: 24px;
+    width: 36px;
+    height: 31px;
+    background-image: url(../images/sprites.png);
+    background-position: -250px -13px;
+}
+
+.qrcode {
+    width: 93px;
+}
+
+.app {
+    padding-top: 13px;
+    font-size: 14px;
+    border: none!important;
+}
+
+.app .h4 {
+    display: block;
+    margin-top: 7px;
+    width: 93px;
+    height: 23px;
+    font-weight: 400;
+    background-color: #27ba9b;
+    color: #ffffff;
+    line-height: 23px;
+    text-align: center;
+}
+
+.tel {
+    display: block!important;
+    margin-top: 58px;
+    text-align: center;
+}
+
+.tel span {
+    display: block;
+    font-size: 22px;
+    color: #666666;
+}
+
+.tel .day {
+    margin-top: 4px;
+    color: #999999;
+    font-size: 15px;
+}
+
+
+/* 版权页 */
+
+.footer {
+    background-color: #333;
+}
+
+.footer .footer_wrapper {
+    width: 1393px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.footer .footer_wrapper .top {
+    height: 175px;
+    border-bottom: 3px solid #434343;
+    line-height: 175px;
+}
+
+.footer .footer_wrapper .top li {
+    float: left;
+    padding: 0 140px;
+    width: 464px;
+}
+
+.footer .footer_wrapper .top li span {
+    display: inline-block;
+    margin-top: 60px;
+    margin-right: 20px;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+}
+
+.footer .footer_wrapper .bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+}
+
+.footer .footer_wrapper .bottom ul {
+    width: 537px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 500px;
+}
+
+.footer .footer_wrapper .bottom ul li {
+    float: left;
+}
+
+.footer .footer_wrapper .bottom ul li a {
+    color: #999999;
+}

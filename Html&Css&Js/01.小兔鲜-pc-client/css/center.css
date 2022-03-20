@@ -1,0 +1,232 @@
+.center_body {
+    display: flex;
+}
+
+.container {
+    background-color: #f6f6f6;
+    padding-top: 29px;
+    padding-bottom: 30px;
+}
+
+
+/* 侧边栏 */
+
+.center_body .left {
+    width: 226px;
+    background-color: #fff;
+}
+
+.center_body .left .img {
+    width: 93px;
+    height: 153px;
+    margin: 47px 0 66px 42px;
+}
+
+.center_body .left .img img {
+    width: 85px;
+}
+
+.center_body .left .img i {
+    display: block;
+    margin: 14px 0 12px 17px;
+    font-size: 18px;
+}
+
+.center_body .left .img .vip {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 93px;
+    height: 26px;
+    background-image: linear-gradient(264deg, #e05e2f 0%, #ea745e 95%);
+    border-radius: 13px;
+}
+
+.center_body .left .img .vip img {
+    width: 15px;
+}
+
+.center_body .left .img .vip span {
+    color: #f9f9f9;
+    font-size: 14px;
+}
+
+.center_body .count dl {
+    padding: 23px 0 23px 52px;
+    border-top: 1px solid #f4f4f4;
+}
+
+.center_body .count dl dt {
+    font-size: 18px;
+}
+
+.center_body .count dl dd {
+    margin-top: 32px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.center_body .count dl dd a:hover {
+    color: #5cb99e;
+}
+
+.current-account {
+    color: #5cb99e;
+}
+
+
+/* 右边 */
+
+.center_body .right {
+    margin-left: 35px;
+}
+
+.center_body .right .head {
+    height: 132px;
+    width: 999px;
+    background-color: #fff;
+}
+
+.center_body .right .head {
+    display: flex;
+    justify-content: space-around;
+}
+
+.center_body .right .head .set {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.center_body .right .head .set li {
+    padding-top: 46px;
+    text-align: center;
+}
+
+.center_body .right .head .set img {
+    margin-bottom: 16px;
+    width: 25px;
+    height: 25px;
+}
+
+.center_body .right .head .welfare {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    width: 344px;
+}
+
+.center_body .right .head .welfare li {
+    text-align: center;
+}
+
+.center_body .right .head .welfare span {
+    color: #e05e30;
+    font-size: 25px;
+}
+
+
+/* 订单 */
+
+.center_body .right .body {
+    margin-top: 18px;
+}
+
+.center_body .right .body .order {
+    padding-bottom: 20px;
+    /* background-color: #fff; */
+}
+
+.center_body .right .body .order .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 70px;
+    background-color: #fff;
+}
+
+.center_body .right .body .order .top h2 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.center_body .right .body .order .top a {
+    color: #999999;
+}
+
+.center_body .right .body .order .bottom {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.center_body .right .body .order .bottom ul {
+    display: flex;
+    margin: 0 17px 20px 17px;
+    height: 136px;
+    width: 964px;
+    border-top: solid 1px #f4f4f4;
+    border-bottom: solid 1px #f4f4f4;
+}
+
+.center_body .right .body .order .bottom ul li:first-child {
+    width: 585px;
+    border-left: solid 1px #e8e8e8;
+    border-right: solid 1px #e8e8e8;
+}
+
+.center_body .right .body .order .bottom ul li:first-child a {
+    display: flex;
+    align-items: center;
+}
+
+.center_body .right .body .order .bottom ul li:first-child a img {
+    margin-top: 17px;
+    margin-left: 12px;
+    width: 107px;
+}
+
+.center_body .right .body .order .bottom ul li:first-child a strong {
+    font-weight: 400;
+}
+
+.center_body .right .body .order .bottom ul li:first-child a i {
+    color: #999;
+    font-size: 14px;
+}
+
+.center_body .right .body .order .bottom ul li:first-child a em {
+    margin-left: 128px;
+    color: #e05e30;
+    font-size: 14px;
+}
+
+.center_body .right .body .order .bottom ul li:nth-child(2) {
+    flex: 1;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.center_body .right .body .order .bottom ul li:nth-child(2) i {
+    font-size: 14px;
+    color: #9a2e1f;
+}
+
+.center_body .right .body .order .bottom ul li:nth-child(3) {
+    flex: 1;
+    padding-top: 28px;
+    text-align: center;
+    border-left: solid 1px #e8e8e8;
+    border-right: solid 1px #e8e8e8;
+}
+
+.center_body .right .body .order .bottom ul li:nth-child(3) div {
+    margin-left: 42px;
+    width: 100px;
+    height: 30px;
+    background-color: #5eb69c;
+    border-radius: 2px;
+    line-height: 30px;
+    color: #ffffff;
+}

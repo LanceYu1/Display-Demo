@@ -1,0 +1,179 @@
+body {
+    background-color: #f7f7f8;
+}
+
+.wrapper {
+    width: 354px;
+    margin: 0 auto;
+}
+
+
+/* 用户收件信息 */
+
+.info-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    height: 85px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.info-user .pic {
+    display: inline-block;
+    margin: 0 11px;
+    width: 30px;
+    height: 30px;
+}
+
+.info-user .pic i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(90deg, #6fc2aa 5%, #54b196 100%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+.info-user div p:first-child {
+    font-size: 15px;
+    color: #262626;
+}
+
+.info-user div p:last-child {
+    font-size: 12px;
+}
+
+.info-user .arrow {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #808080;
+}
+
+
+/* 商品信息 */
+
+.info-goods {
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    height: 107px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.info-goods img {
+    margin: 0 11px;
+    width: 85px;
+    height: 85px;
+}
+
+.info-goods p {
+    font-size: 13px;
+    color: #262626;
+}
+
+.info-goods span {
+    font-size: 11px;
+    color: #888888;
+}
+
+.info-goods p i {
+    color: #cf4444;
+    font-size: 16px;
+}
+
+.info-goods p i span {
+    font-size: 9px;
+    text-decoration: line-through;
+}
+
+.info-goods div {
+    margin: 0 15px;
+    color: #262626;
+    font-size: 15px;
+}
+
+.info-goods div span {
+    color: #333;
+}
+
+
+/* 配送信息 */
+
+.deliver {
+    margin-top: 6px;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #262626;
+    line-height: 42px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.deliver div {
+    height: 42px;
+}
+
+.deliver a {
+    color: #262626;
+}
+
+.deliver .msg input {
+    margin-left: 20px;
+}
+
+.deliver .payways span {
+    margin-left: 9px;
+    width: 7px;
+    height: 11px;
+    color: #808080;
+}
+
+
+/* 价格信息 */
+
+.price .payways a {
+    color: #cf4444;
+    font-size: 13px;
+}
+
+
+/* 支付 */
+
+.pay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 0 10px;
+    width: 375px;
+    height: 79px;
+    line-height: 79px;
+    font-size: 11px;
+}
+
+.pay span {
+    color: #cf4444;
+    font-size: 20px;
+}
+
+.pay a {
+    display: block;
+    width: 91px;
+    height: 35px;
+    background-image: linear-gradient(90deg, #6fc2aa 5%, #54b196 100%);
+    border-radius: 3px;
+    line-height: 35px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+}
